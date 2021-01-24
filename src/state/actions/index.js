@@ -15,10 +15,11 @@ export const setCurrentUser = () => async dispatch => {
       .then(res => res.data.user);
     dispatch({ type: 'SET_CURRENT_USER', payload: currentUser });
   } catch (error) {
-    alert('error');
+    alert('Error logging in');
     console.log(error);
     console.log(error?.response);
   } finally {
+    console.log('LOGIN ACTION: FINALLY: SET_LOADING');
     dispatch({ type: 'SET_LOADING', payload: false });
   }
 };
