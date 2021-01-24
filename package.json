@@ -13,7 +13,7 @@
     "@okta/okta-react": "^3.0.2",
     "@okta/okta-signin-widget": "^4.1.2",
     "antd": "^4.9.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "craco-less": "^1.17.0",
     "material-table": "^1.67.0",
     "node-sass": "^4.14.1",
