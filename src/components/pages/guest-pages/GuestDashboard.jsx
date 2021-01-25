@@ -11,6 +11,7 @@ import { connect } from 'react-redux';
 
 // state
 import { useSelector } from 'react-redux';
+import Popup from 'reactjs-popup';
 
 const GuestDashboard = ({ fetchHousehold, fetchFamily }) => {
   const user = useSelector(state => state.CURRENT_USER);
@@ -42,6 +43,11 @@ const GuestDashboard = ({ fetchHousehold, fetchFamily }) => {
       <h1>Welcome To Family Promise of Spokane</h1>
       <h2>The facility has 12 beds left.</h2>
       <p> Would you like to check in? </p>
+      <Popup trigger={<button>Popup</button>}>
+        <div>
+          <input type="text" />
+        </div>
+      </Popup>
     </div>
   );
 };
