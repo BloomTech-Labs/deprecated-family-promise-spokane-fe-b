@@ -6,6 +6,8 @@ const ApiUrl =
     ? process.env.REACT_APP_API_URI
     : 'http://localhost:8000/';
 
+// needs to be set in Amplify you want this to work
+// set to your "Product Node Server URI"... heroku app
 export const axiosWithAuth = () => {
   const token = JSON.parse(localStorage.getItem('okta-token-storage'))?.idToken
     ?.value;
@@ -13,7 +15,11 @@ export const axiosWithAuth = () => {
     headers: {
       Authorization: `Bearer ${token}`,
     },
-    baseURL: 'https://family-promise-spokane-be-b.herokuapp.com/',
+
+    baseURL: ApiUrl,
+
+    // baseURL: 'https://family-promise-spokane-be-b.herokuapp.com/',
     // baseURL: 'https://family-pomise-spokane.herokuapp.com',
+
   });
 };
