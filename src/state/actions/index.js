@@ -13,12 +13,16 @@ export const setCurrentUser = () => async dispatch => {
     let currentUser = await axiosWithAuth()
       .get('/users/me')
       .then(res => res.data.user);
+
+    currentUser.role = 'guest';
+
     dispatch({ type: 'SET_CURRENT_USER', payload: currentUser });
   } catch (error) {
-    alert('error');
+    alert('Error logging in');
     console.log(error);
     console.log(error?.response);
   } finally {
+    console.log('LOGIN ACTION: FINALLY: SET_LOADING');
     dispatch({ type: 'SET_LOADING', payload: false });
   }
 };
