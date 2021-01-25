@@ -14,6 +14,8 @@ export const setCurrentUser = () => async dispatch => {
       .get('/users/me')
       .then(res => res.data.user);
 
+    currentUser.role = 'guest';
+
     dispatch({ type: 'SET_CURRENT_USER', payload: currentUser });
   } catch (error) {
     alert('Error logging in');
