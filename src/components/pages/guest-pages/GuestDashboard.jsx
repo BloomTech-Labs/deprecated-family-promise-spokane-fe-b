@@ -4,6 +4,7 @@ import { axiosWithAuth } from '../../../api/axiosWithAuth';
 
 // UI
 import { Divider } from 'antd';
+import styled from 'styled-components';
 
 //redux
 import actions from '../../../state/actions/families';
@@ -11,6 +12,7 @@ import { connect } from 'react-redux';
 
 // state
 import { useSelector } from 'react-redux';
+import Popup from 'reactjs-popup';
 
 const GuestDashboard = ({ fetchHousehold, fetchFamily }) => {
   const user = useSelector(state => state.CURRENT_USER);
@@ -36,12 +38,42 @@ const GuestDashboard = ({ fetchHousehold, fetchFamily }) => {
     fetchFamilyInformation();
   }, []);
 
+  const Pop = styled.div`
+    font-size: 20px;
+  `;
+  const Menu = styled.button`
+    width: 20%;
+    margin-left: 40%;
+  `;
+  const Submit = styled.button`
+    width: 30%;
+    text-align: center;
+    margin-top: 3%;
+  `;
+
   return (
     <div className="container">
       <h1>Guest dashboard</h1>
       <h1>Welcome To Family Promise of Spokane</h1>
       <h2>The facility has 12 beds left.</h2>
       <p> Would you like to check in? </p>
+      <Popup trigger={<Menu>Checkin</Menu>}>
+        <Pop>
+          <div>
+            <p>Guest's Name</p>
+            <input type="text" />
+          </div>
+          <div>
+            <p>How many guests are accompanying you?</p>
+            <input type="text" />
+          </div>
+          <div>
+            <p>How many beds will you be needing?</p>
+            <input type="text" />
+          </div>
+          <Submit>Submit</Submit>
+        </Pop>
+      </Popup>
     </div>
   );
 };

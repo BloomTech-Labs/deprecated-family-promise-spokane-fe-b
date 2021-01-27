@@ -3,11 +3,11 @@ import React, { useEffect, useState } from 'react';
 import MaterialTable from 'material-table';
 import { axiosWithAuth } from '../../../api/axiosWithAuth';
 import { useHistory } from 'react-router-dom';
-import NoteIcon from '@material-ui/icons/Note';
-import PeopleIcon from '@material-ui/icons/People';
-import InfoIcon from '@material-ui/icons/Info';
+import { FileOutlined } from '@ant-design/icons';
+import { TeamOutlined } from '@ant-design/icons';
+import { InfoCircleOutlined } from '@ant-design/icons';
 import { tableIcons } from '../../../utils/tableIcons';
-import FlagIcon from '@material-ui/icons/Flag';
+import { FlagOutlined } from '@ant-design/icons';
 // import CardShadow from '../../CardShadow';
 import FlagGuest from '../../modals/FlagGuest';
 import GuestNotes from '../../modals/GuestNotes';
@@ -118,7 +118,7 @@ const Guests = ({}) => {
             data={state.data}
             actions={[
               {
-                icon: PeopleIcon,
+                icon: TeamOutlined,
                 tooltip: 'Family Members',
                 onClick: (event, rowData) => {
                   // Do save operation
@@ -127,7 +127,7 @@ const Guests = ({}) => {
                 },
               },
               {
-                icon: NoteIcon,
+                icon: FileOutlined,
                 tooltip: 'Notes',
                 onClick: (event, rowData) => {
                   // Do save operation
@@ -135,7 +135,7 @@ const Guests = ({}) => {
                 },
               },
               {
-                icon: FlagIcon,
+                icon: FlagOutlined,
                 tooltip: 'Flag Guest',
                 onClick: (event, rowData) => {
                   setIsFlagOpen(true);
@@ -143,7 +143,7 @@ const Guests = ({}) => {
                 },
               },
               {
-                icon: InfoIcon,
+                icon: InfoCircleOutlined,
                 tooltip: 'More Info',
                 onClick: (event, rowData) => {
                   setResult(state.data[rowData.id]);
