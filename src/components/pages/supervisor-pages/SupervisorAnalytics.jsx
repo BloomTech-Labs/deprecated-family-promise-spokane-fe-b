@@ -17,9 +17,16 @@ import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import Circle from 'react-circle';
 import { useSelector } from 'react-redux';
 import { axiosWithAuth } from '../../../api/axiosWithAuth';
+import embed from 'vega-embed';
 
 // utils
 import { tableIcons } from '../../../utils/tableIcons';
+
+const spec = {};
+
+const result = embed('#vis', spec);
+
+console.log(result.view);
 
 const useStyles = makeStyles({
   root: {
