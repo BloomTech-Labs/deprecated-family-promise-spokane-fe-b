@@ -17,7 +17,6 @@ import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import Circle from 'react-circle';
 import { useSelector } from 'react-redux';
 import { axiosWithAuth } from '../../../api/axiosWithAuth';
-import sampleData from './sampleData.json';
 
 // utils
 import { tableIcons } from '../../../utils/tableIcons';
@@ -25,6 +24,7 @@ import { tableIcons } from '../../../utils/tableIcons';
 // DS visualization
 import Vega from 'vega';
 import vegaEmbed from 'vega-embed';
+import sampleData from './sampleData.json';
 
 const useStyles = makeStyles({
   root: {
