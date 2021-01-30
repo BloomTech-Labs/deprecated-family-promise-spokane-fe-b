@@ -1,0 +1,363 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400
+    }
+  },
+  "data": {
+    "name": "data-8b140dc5b3c866408c5a590de7b677af"
+  },
+  "datasets": {
+    "data-8b140dc5b3c866408c5a590de7b677af": [
+      {
+        "Current Age": 43,
+        "Gender": "Female",
+        "Household ID": 124767
+      },
+      {
+        "Current Age": 6,
+        "Gender": "Male",
+        "Household ID": 124767
+      },
+      {
+        "Current Age": 43,
+        "Gender": "Male",
+        "Household ID": 124767
+      },
+      {
+        "Current Age": 32,
+        "Gender": "Female",
+        "Household ID": 126742
+      },
+      {
+        "Current Age": 2,
+        "Gender": "Male",
+        "Household ID": 126742
+      },
+      {
+        "Current Age": 67,
+        "Gender": "Female",
+        "Household ID": 127326
+      },
+      {
+        "Current Age": 1,
+        "Gender": "Female",
+        "Household ID": 127326
+      },
+      {
+        "Current Age": 28,
+        "Gender": "Female",
+        "Household ID": 129138
+      },
+      {
+        "Current Age": 8,
+        "Gender": "Female",
+        "Household ID": 129138
+      },
+      {
+        "Current Age": 6,
+        "Gender": "Female",
+        "Household ID": 129138
+      },
+      {
+        "Current Age": 2,
+        "Gender": "Female",
+        "Household ID": 129138
+      },
+      {
+        "Current Age": 0,
+        "Gender": "Female",
+        "Household ID": 129138
+      },
+      {
+        "Current Age": 34,
+        "Gender": "Female",
+        "Household ID": 129184
+      },
+      {
+        "Current Age": 8,
+        "Gender": "Male",
+        "Household ID": 129184
+      },
+      {
+        "Current Age": 6,
+        "Gender": "Female",
+        "Household ID": 129184
+      },
+      {
+        "Current Age": 4,
+        "Gender": "Male",
+        "Household ID": 129184
+      },
+      {
+        "Current Age": 61,
+        "Gender": "Female",
+        "Household ID": 129442
+      },
+      {
+        "Current Age": 10,
+        "Gender": "Female",
+        "Household ID": 129442
+      },
+      {
+        "Current Age": 34,
+        "Gender": "Female",
+        "Household ID": 129445
+      },
+      {
+        "Current Age": 18,
+        "Gender": "Female",
+        "Household ID": 129446
+      },
+      {
+        "Current Age": 0,
+        "Gender": "Male",
+        "Household ID": 129446
+      },
+      {
+        "Current Age": 23,
+        "Gender": "Male",
+        "Household ID": 129512
+      },
+      {
+        "Current Age": 23,
+        "Gender": "Female",
+        "Household ID": 129512
+      },
+      {
+        "Current Age": 0,
+        "Gender": "Female",
+        "Household ID": 129512
+      },
+      {
+        "Current Age": 41,
+        "Gender": "Female",
+        "Household ID": 129647
+      },
+      {
+        "Current Age": 10,
+        "Gender": "Male",
+        "Household ID": 129647
+      },
+      {
+        "Current Age": 20,
+        "Gender": "Male",
+        "Household ID": 129647
+      },
+      {
+        "Current Age": 19,
+        "Gender": "Male",
+        "Household ID": 129647
+      },
+      {
+        "Current Age": 44,
+        "Gender": "Female",
+        "Household ID": 130073
+      },
+      {
+        "Current Age": 22,
+        "Gender": "Female",
+        "Household ID": 130073
+      },
+      {
+        "Current Age": 17,
+        "Gender": "Female",
+        "Household ID": 130073
+      },
+      {
+        "Current Age": 10,
+        "Gender": "Female",
+        "Household ID": 130073
+      },
+      {
+        "Current Age": 1,
+        "Gender": "Male",
+        "Household ID": 130073
+      },
+      {
+        "Current Age": 34,
+        "Gender": "Female",
+        "Household ID": 130168
+      },
+      {
+        "Current Age": 41,
+        "Gender": "Male",
+        "Household ID": 130168
+      },
+      {
+        "Current Age": 11,
+        "Gender": "Male",
+        "Household ID": 130168
+      },
+      {
+        "Current Age": 0,
+        "Gender": "Female",
+        "Household ID": 130295
+      },
+      {
+        "Current Age": 41,
+        "Gender": "Male",
+        "Household ID": 130295
+      },
+      {
+        "Current Age": 33,
+        "Gender": "Female",
+        "Household ID": 130295
+      },
+      {
+        "Current Age": 1,
+        "Gender": "Male",
+        "Household ID": 130295
+      },
+      {
+        "Current Age": 30,
+        "Gender": "Male",
+        "Household ID": 130361
+      },
+      {
+        "Current Age": 28,
+        "Gender": "Gender Non-Conforming (i.e. not exclusively male or female)",
+        "Household ID": 130361
+      },
+      {
+        "Current Age": 34,
+        "Gender": "Male",
+        "Household ID": 130363
+      },
+      {
+        "Current Age": 7,
+        "Gender": "Male",
+        "Household ID": 130363
+      },
+      {
+        "Current Age": 1,
+        "Gender": "Female",
+        "Household ID": 130363
+      },
+      {
+        "Current Age": 37,
+        "Gender": "Female",
+        "Household ID": 130619
+      },
+      {
+        "Current Age": 17,
+        "Gender": "Male",
+        "Household ID": 130619
+      },
+      {
+        "Current Age": 11,
+        "Gender": "Male",
+        "Household ID": 130619
+      },
+      {
+        "Current Age": 7,
+        "Gender": "Female",
+        "Household ID": 130619
+      },
+      {
+        "Current Age": 34,
+        "Gender": "Male",
+        "Household ID": 130619
+      },
+      {
+        "Current Age": 27,
+        "Gender": "Male",
+        "Household ID": 130620
+      },
+      {
+        "Current Age": 48,
+        "Gender": "Female",
+        "Household ID": 130620
+      },
+      {
+        "Current Age": 15,
+        "Gender": "Male",
+        "Household ID": 130620
+      },
+      {
+        "Current Age": 34,
+        "Gender": "Male",
+        "Household ID": 130740
+      },
+      {
+        "Current Age": 35,
+        "Gender": "Female",
+        "Household ID": 130740
+      },
+      {
+        "Current Age": 6,
+        "Gender": "Female",
+        "Household ID": 130740
+      },
+      {
+        "Current Age": 27,
+        "Gender": "Female",
+        "Household ID": 130807
+      },
+      {
+        "Current Age": 7,
+        "Gender": "Female",
+        "Household ID": 130807
+      },
+      {
+        "Current Age": 23,
+        "Gender": "Female",
+        "Household ID": 131395
+      },
+      {
+        "Current Age": 3,
+        "Gender": "Female",
+        "Household ID": 131395
+      },
+      {
+        "Current Age": 1,
+        "Gender": "Female",
+        "Household ID": 131395
+      },
+      {
+        "Current Age": 39,
+        "Gender": "Male",
+        "Household ID": 131395
+      },
+      {
+        "Current Age": 34,
+        "Gender": "Female",
+        "Household ID": 131546
+      },
+      {
+        "Current Age": 12,
+        "Gender": "Male",
+        "Household ID": 131546
+      },
+      {
+        "Current Age": 10,
+        "Gender": "Female",
+        "Household ID": 131546
+      },
+      {
+        "Current Age": 9,
+        "Gender": "Female",
+        "Household ID": 131546
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "Gender",
+      "type": "nominal"
+    },
+    "x": {
+      "field": "Current Age",
+      "title": "Current Guest Age",
+      "type": "quantitative"
+    },
+    "y": {
+      "aggregate": "count",
+      "type": "quantitative"
+    }
+  },
+  "mark": "bar",
+  "width": 600
+}

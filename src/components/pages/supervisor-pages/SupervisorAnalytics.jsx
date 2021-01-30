@@ -17,9 +17,14 @@ import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import Circle from 'react-circle';
 import { useSelector } from 'react-redux';
 import { axiosWithAuth } from '../../../api/axiosWithAuth';
+import sampleData from './sampleData.json';
 
 // utils
 import { tableIcons } from '../../../utils/tableIcons';
+
+// DS visualization
+import Vega from 'vega';
+import vegaEmbed from 'vega-embed';
 
 const useStyles = makeStyles({
   root: {
@@ -58,6 +63,11 @@ const rows = [
 ];
 
 const Analytics = () => {
+  const spec = sampleData;
+  vegaEmbed('#vis', spec)
+    // result.view provides access to the Vega View API
+    .then(result => console.log(result))
+    .catch(console.warn);
   const [logs, setLogs] = useState([]);
   const [card, setCard] = useState(false);
   const [staffMembers, setStaffMembers] = useState([]);
@@ -79,6 +89,7 @@ const Analytics = () => {
   return (
     <div className="cards-container">
       <div className="cards">
+        <div id="vis"></div>
         <Card className={classes.root} variant="outlined">
           <CardContent>
             <Typography
