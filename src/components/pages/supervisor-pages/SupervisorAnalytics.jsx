@@ -90,7 +90,7 @@ const Analytics = () => {
     <div className="cards-container">
       <div className="cards">
         <div id="vis"></div>
-        <Card className={classes.root} variant="outlined">
+        {/* <Card className={classes.root} variant="outlined">
           <CardContent>
             <Typography
               className={classes.title}
@@ -120,7 +120,7 @@ const Analytics = () => {
                   </Card>
                 ))
               : ''}
-            {/* <Typography>22</Typography> */}
+             <Typography>22</Typography> }
           </CardContent>
         </Card>
         <Card className={classes.root} variant="outlined">
@@ -148,7 +148,7 @@ const Analytics = () => {
             </Typography>
             <Typography>90</Typography>
           </CardContent>
-        </Card>
+              </Card> */}
       </div>
       <div className="second">
         {user.role == 'executive_director' && (
@@ -163,7 +163,7 @@ const Analytics = () => {
             />
           </div>
         )}
-        <div className="carrying-capacity">
+        {/* <div className="carrying-capacity">
           <h2>Carrying Capacity</h2>
           <Circle
             animate={true} // Boolean: Animated/Static progress
@@ -182,8 +182,8 @@ const Analytics = () => {
             roundedStroke={true} // Boolean: Rounded/Flat line ends
             showPercentage={true} // Boolean: Show/hide percentage.
             showPercentageSymbol={true} // Boolean: Show/hide only the "%" symbol.
-          />
-        </div>
+          /> 
+         </div> */}
       </div>
     </div>
   );
