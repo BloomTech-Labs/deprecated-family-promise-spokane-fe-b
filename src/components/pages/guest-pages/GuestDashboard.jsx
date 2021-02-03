@@ -60,7 +60,7 @@ const GuestDashboard = ({ fetchHousehold, fetchFamily }) => {
       <Popup trigger={<Menu>Checkin</Menu>}>
         <Pop>
           <div>
-            <p>Guest's Name</p>
+            <p>Guest Name</p>
             <input type="text" />
           </div>
           <div>
