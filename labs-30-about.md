@@ -1,0 +1,3 @@
+- The most important issue that our team would like to bring up to the next frontend team working on this project would be to make sure that the correct backend and frontend credentials are being used to allow all code to be worked on without too much delay
+- Most of the frontend data in regards to Guests is dummy data. Only the data science visualizations that we added to the supervisor analytics are connected to actual data.
+- https://trello.com/b/5J8xmgZo/labs30-family-promise-b
